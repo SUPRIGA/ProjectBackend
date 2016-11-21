@@ -10,7 +10,7 @@ import com.niit.homeshop.model.Category;
 public interface CategoryDAO {
 
 	   public List<Category> getAllCategory();
-	   public  Category getCategory(int category_id);
+	   public  Category getCategory(int cid);
 	   public void insertCategory(Category category);
 	   public void updateCategory(Category category);
 	   public void deleteCategory(int id);

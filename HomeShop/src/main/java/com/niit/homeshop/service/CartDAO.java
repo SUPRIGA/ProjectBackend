@@ -9,7 +9,7 @@ import com.niit.homeshop.model.Cart;
 public interface CartDAO {
 	
 	 public List<Cart> getAllCart();
-	   public  List<Cart> getCart(String pn);
+	   public  List<Cart> getCart(String user_name);
 	   public void insertCart(Cart cart);
 	   public void updateCart(Cart cart);
 	   public void deleteCart(int id);

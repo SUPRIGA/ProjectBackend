@@ -47,7 +47,7 @@ public class ProductDAOImpl implements ProductDAO {
 
 	@Transactional
 	public void updateProduct(Product product) {
-		
+		sessionFactory.getCurrentSession().saveOrUpdate(product);
 
 	}
 

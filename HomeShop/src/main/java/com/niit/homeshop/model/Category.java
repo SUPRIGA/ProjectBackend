@@ -17,7 +17,7 @@ public class Category {
     @Id
     @Column
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	   private int category_id;
+	   private int cid;
     
     @Column
 	   private String cn; 
@@ -25,11 +25,12 @@ public class Category {
 	   private String cd; 
 
 	   
-    public int getCategory_Id() {
-	     return category_id;
-    }
-	public void setCategory_Id(int category_id) {
-		 this.category_id = category_id;
+  
+	public int getCid() {
+		return cid;
+	}
+	public void setCid(int cid) {
+		this.cid = cid;
 	}
 	public String getCn() {
 		return cn;

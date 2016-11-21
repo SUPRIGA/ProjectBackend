@@ -41,6 +41,7 @@ public class UserAccountTest {
 	
    useraccountDAO.insertUserAccount(userAccount);
 	
+	
 
 	ProductDAO productDAO=(ProductDAO) context.getBean("ProductDAO");
 	Product product= (Product) context.getBean("product");
@@ -88,6 +89,7 @@ cart.setPn("washingmachine");
 cart.setId(1);
 cart.setQuantity(5);
 cart.setPrice(400);
+cart.setUser_name("aravind");
 
 cartDAO.insertCart(cart);
 
@@ -95,7 +97,7 @@ ShippingAddressDAO shippingaddressDAO=(ShippingAddressDAO) context.getBean("Ship
 ShippingAddress shippingAddress= (ShippingAddress) context.getBean("shippingAddress");
 
 
-shippingAddress.setProduct_Id(1);
+shippingAddress.setId(1);
 shippingAddress.setUser_Id(1);
 shippingAddress.setMobile_Number(5);
 shippingAddress.setAddress("gandhimanagar");
@@ -116,6 +118,7 @@ Role role= (Role) context.getBean("role");
      userAccount.setRole(role);
      role.setUseraccount(userAccount);
     // roleDAO.insertRole(role);
+     
      
      
      CardDAO cardDAO=(CardDAO) context.getBean("CardDAO");

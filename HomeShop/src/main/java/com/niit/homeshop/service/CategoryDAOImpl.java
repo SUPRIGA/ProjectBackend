@@ -47,12 +47,13 @@ public class CategoryDAOImpl implements CategoryDAO {
 	@Transactional
 	public void updateCategory(Category category) {
 		// TODO Auto-generated method stub
+		sessionFactory.getCurrentSession().saveOrUpdate(category);
 	}
 
 	@Transactional
 	public void deleteCategory(int id) {
 		Category deleteCategory=new Category();
-		  deleteCategory.setCategory_Id(id);
+		  deleteCategory.setCid(id);
 		  sessionFactory.getCurrentSession().delete(deleteCategory);
   
 

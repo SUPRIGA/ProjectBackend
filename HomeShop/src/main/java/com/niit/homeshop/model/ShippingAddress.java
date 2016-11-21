@@ -20,7 +20,7 @@ public class ShippingAddress {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private int shippingaddress_id;
 	 @Column
-		private int product_id;
+		private int id;
 	 @Column
 		private int user_id ; 
 	 @Column
@@ -37,11 +37,12 @@ public class ShippingAddress {
 	public void setShippingAddress_Id(int shippingaddress_id) {
 		this. shippingaddress_id = shippingaddress_id;
 	}
-	public int getProduct_Id() {
-		return product_id;
+	
+	public int getId() {
+		return id;
 	}
-	public void setProduct_Id(int product_id) {
-		this.product_id = product_id;
+	public void setId(int id) {
+		this.id = id;
 	}
 	public int getUser_Id() {
 		return user_id;
